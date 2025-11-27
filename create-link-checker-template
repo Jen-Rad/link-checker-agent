@@ -1,0 +1,121 @@
+## Fork vs Template - What's the Difference?
+
+| Feature | **Fork** | **Template** |
+|---------|---------|------------|
+| **What it does** | Creates a copy linked to original | Creates a clean copy (no link) |
+| **Shows history** | Yes, shows all original commits | No, starts fresh |
+| **Use case** | Contributing back to project | Starting your own version |
+| **Best for** | Collaboration | Personal projects |
+
+---
+
+## Option A: FORK (If you want to contribute back)
+
+**Fork** = Copy that stays connected to the original
+
+```
+Step 1: Go to https://github.com/Jen-Rad/link-checker-agent
+Step 2: Click "Fork" button (top right)
+Step 3: Creates your own copy: https://github.com/YOUR-USERNAME/link-checker-agent
+Step 4: Clone it: git clone https://github.com/YOUR-USERNAME/link-checker-agent.git
+Step 5: Make changes, push back, create pull request
+```
+
+**Good for:** If you want to improve it and suggest changes back to me
+
+---
+
+## Option B: TEMPLATE (If you want your own separate version)
+
+**Template** = Clean copy with NO connection to original
+
+```
+Step 1: Go to https://github.com/Jen-Rad/link-checker-agent
+Step 2: Click "Use this template" button
+Step 3: Name your new repo: "my-link-checker" or whatever
+Step 4: Creates YOUR new repo: https://github.com/YOUR-USERNAME/my-link-checker
+Step 5: Clone it: git clone https://github.com/YOUR-USERNAME/my-link-checker.git
+Step 6: Completely your own project - no connection to original
+```
+
+**Good for:** If you want your own version for other projects
+
+---
+
+## I Recommend: TEMPLATE ✅
+
+For your case, use **"Use this template"** because:
+- ✅ You get your own separate project
+- ✅ No connection to original (you can modify freely)
+- ✅ Clean history (starts fresh)
+- ✅ Perfect for copying to other projects
+- ✅ Easy to use on multiple computers
+
+---
+
+## Step-by-Step: Use as Template
+
+### On GitHub:
+1. Go to: `https://github.com/Jen-Rad/link-checker-agent`
+2. Click green **"Code"** button dropdown
+3. Click **"Use this template"** (or look for template button)
+4. Name it: `link-checker-backup` or `my-link-checker`
+5. Click **"Create repository from template"**
+
+### On Your Mac:
+```bash
+cd ~/Documents/new-project-folder
+git clone https://github.com/YOUR-USERNAME/my-link-checker.git
+cd my-link-checker
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python link_checker_agent_enhanced.py
+```
+
+---
+
+## Visual Comparison
+
+```
+FORK:
+┌─────────────────────────────┐
+│ Jen-Rad/link-checker-agent  │ (Original)
+└──────────────┬──────────────┘
+               │ Fork
+               ▼
+┌─────────────────────────────┐
+│ YOUR-NAME/link-checker-agent│ (Your Copy - Still Connected)
+│ "Forked from Jen-Rad"       │
+└─────────────────────────────┘
+
+TEMPLATE:
+┌─────────────────────────────┐
+│ Jen-Rad/link-checker-agent  │ (Original)
+└──────────────┬──────────────┘
+               │ Use as Template
+               ▼
+┌─────────────────────────────┐
+│ YOUR-NAME/my-link-checker   │ (Your Separate Project)
+│ "No connection to original"  │
+└─────────────────────────────┘
+```
+
+---
+
+## TL;DR
+
+**Use TEMPLATE if:**
+- You want your own completely separate project
+- You plan to modify it for different purposes
+- You don't plan to contribute back
+
+**Use FORK if:**
+- You want to improve the original and send pull requests
+- You want to stay connected to the original
+
+---
+
+**For you: I recommend TEMPLATE!** 🎯 Create your own version and use it across multiple projects freely.
+
+Want me to walk you through it step-by-step? 📋
