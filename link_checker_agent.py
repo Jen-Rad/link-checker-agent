@@ -307,8 +307,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main()) EOF
-cat > requirements.txt << 'EOF'
-aiohttp==3.9.1
-beautifulsoup4==4.12.2
-python-dotenv==1.0.0
+    asyncio.run(main())
